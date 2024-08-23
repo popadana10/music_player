@@ -5,10 +5,10 @@ const TrackList = () => {
 
     return (
         <>
-            {music.TrackList.map((track, index) => (
+            {music.trackList.map((track, index) => (
                 <div key={`${track}_${index}`}>
                     <button onClick={() => music.playTrack(index)}>
-                        {music.isPlaying && music.currentTruckIndex === index ? 'Pause' : 'Play'}
+                        {music.isPlaying && music.currentTrackIndex === index ? 'Pause' : 'Play'}
                     </button>
                     <div>Track Playing: {track.name}</div>
                 </div>
